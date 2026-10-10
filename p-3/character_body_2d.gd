@@ -25,3 +25,6 @@ func _physics_process(delta: float) -> void:
 	velocity = Input.get_vector("left", "right", "up", "down") * delta * SPEED * 50
 
 	move_and_slide()
+	
+func kill():
+	get_tree().reload_current_scene() # Restart the current scene
