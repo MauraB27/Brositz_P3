@@ -26,5 +26,13 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
+	for i in get_slide_collision_count():       # For all collisions
+		var collision = get_slide_collision(i)  # Find the collision by index
+		var collider = collision.get_collider() # Get its collider
+		if collider is RigidBody2D:             # Check if its rigidbody, and push
+			var push_dir = -collision.get_normal()
+			var push_force = 50.00
+			collider.apply_impulse(push_dir * push_force)
+	
 func kill():
 	get_tree().reload_current_scene() # Restart the current scene
