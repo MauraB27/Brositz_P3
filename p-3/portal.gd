@@ -10,7 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
+#teleports player body to the marker body to transition to level 2
 func _on_body_entered(body: Node2D) -> void:
 	#if body.is_in_group("player"):
 	if body.name == "Player":

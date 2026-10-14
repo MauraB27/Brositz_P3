@@ -22,6 +22,7 @@ func _physics_process(delta: float) -> void:
 	#else:
 	#	velocity.x = move_toward(velocity.x, 0, SPEED)
 	
+	#makes the game top down rather than platform
 	velocity = Input.get_vector("left", "right", "up", "down") * delta * SPEED * 50
 
 	move_and_slide()

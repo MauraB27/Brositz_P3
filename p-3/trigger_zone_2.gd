@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	print("player entered trigger zone")
 	
-	#var flag: bool = false
+	#ensures all keys are in the inventory before unlocking door 2
 	for item in ["mazeKeyA", "mazeKeyB", "mazeKeyC", "mazeKeyD"]:
 		if (item not in GameManager.inventory):
 			print(item + " not in inventory")

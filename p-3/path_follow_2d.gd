@@ -10,10 +10,10 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	#must multiply by delta in order to deal with frame rate independence
 	progress_ratio += speed * delta
-	
+	# Reverse speed if progress ratio is 0 or 1
 	if progress_ratio == 0.0:
 		speed = -speed
 	
 	elif progress_ratio == 1.0:
 		speed = -speed
-	# Reverse speed
+	

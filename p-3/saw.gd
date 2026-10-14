@@ -8,6 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
+#kills player if they get struck by the saw
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
 		body.kill()

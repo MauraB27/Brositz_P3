@@ -10,7 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
+#kills player if they get struck by the spikes
 func _on_body_entered(body: Node2D) -> void:
 	#If body player
 	body.kill()

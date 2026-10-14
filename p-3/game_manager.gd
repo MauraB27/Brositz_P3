@@ -2,6 +2,7 @@ extends Node
 
 #var has_key: bool = false
 
+#handles the keys in the inventory
 var inventory: Array[String]
 
 # Called when the node enters the scene tree for the first time.

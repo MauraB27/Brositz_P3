@@ -10,7 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
+#adds keys to the inventory
 func _on_body_entered(body: Node2D) -> void:
 	print("YOU GOT THAT KEY")
 	GameManager.inventory.append(name)

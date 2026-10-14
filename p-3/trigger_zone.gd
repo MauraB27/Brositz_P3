@@ -15,6 +15,7 @@ func _on_body_entered(body: Node2D) -> void:
 	print("player entered trigger zone")
 	
 	#var flag: bool = false
+	#checks to see if keys are in inventory and if they are, the door unlocks
 	for item in ["blueKey", "redKey"]:
 		if (item not in GameManager.inventory):
 			print(item + " not in inventory")
