@@ -31,7 +31,7 @@ func _physics_process(delta: float) -> void:
 		var collider = collision.get_collider() # Get its collider
 		if collider is RigidBody2D:             # Check if its rigidbody, and push
 			var push_dir = -collision.get_normal()
-			var push_force = 50.00
+			var push_force = 40.00
 			collider.apply_impulse(push_dir * push_force)
 	
 func kill():
