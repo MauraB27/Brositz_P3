@@ -2706,14 +2706,17 @@ point_count = 8
 [sub_resource type="CircleShape2D" id="CircleShape2D_bc84e"]
 radius = 15.441098
 
+[sub_resource type="LabelSettings" id="LabelSettings_bc84e"]
+font_size = 8
+
 [node name="World" type="Node2D" unique_id=1814670489]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1856905601]
 z_index = -2
-offset_left = -3985.0
-offset_top = -3304.0
-offset_right = 4778.0
-offset_bottom = 3715.0
+offset_left = -3999.0
+offset_top = -3303.0
+offset_right = 4764.0
+offset_bottom = 3716.0
 color = Color(0.027913298, 0.53, 0.010599989, 0.7882353)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=655250573]
@@ -2729,12 +2732,12 @@ position = Vector2(-5, 17)
 zoom = Vector2(3, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=451895996]
-position = Vector2(-0.4999981, 0)
+position = Vector2(-9.536743e-07, 37)
 scale = Vector2(0.42968753, 0.453125)
 texture = ExtResource("2_fj7yv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1641285496]
-position = Vector2(-0.5, 0)
+position = Vector2(-1, 37)
 shape = SubResource("RectangleShape2D_fyly4")
 
 [node name="Spikes" type="Area2D" parent="." unique_id=320710870]
@@ -2962,8 +2965,8 @@ texture = ExtResource("9_ioo17")
 position = Vector2(6, 13)
 shape = SubResource("RectangleShape2D_e3ehj")
 
-[node name="Marker2D" type="Marker2D" parent="." unique_id=2142309553]
-position = Vector2(511, 3153)
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1263637548]
+position = Vector2(525, 3120)
 
 [node name="Rock" type="RigidBody2D" parent="." unique_id=1143365617]
 position = Vector2(810, 2209)
@@ -3018,6 +3021,20 @@ position = Vector2(-0.09596634, 0.40834522)
 rotation = -1.1387726
 scale = Vector2(0.9999989, 0.99999917)
 shape = SubResource("CircleShape2D_bc84e")
+
+[node name="Label" type="Label" parent="." unique_id=958886227]
+custom_minimum_size = Vector2(1, 1)
+offset_left = -59.0
+offset_top = -44.0
+offset_right = 106.0
+offset_bottom = 13.0
+text = "Controls: WASD or arrow keys
+LEVEL 1: collect the keys and make it to the portal
+LEVEL 2: find and collect all 4 keys to get to the shop"
+label_settings = SubResource("LabelSettings_bc84e")
+horizontal_alignment = 1
+autowrap_mode = 2
+visible_characters_behavior = 1
 
 [connection signal="body_entered" from="Spikes" to="Spikes" method="_on_body_entered"]
 [connection signal="body_entered" from="Spikes2" to="Spikes2" method="_on_body_entered"]
