@@ -17,3 +17,6 @@ The thought behind the design is a little slice of bread exploring the forest an
 - felt it was too zoomed out= wanted to see in more detail (implemented a change to zoom in more so that player could see the art better and focus more on the character)
 - maybe move the character slower to navigate spikes easier
 - add sprites to keys and doors (implemented)
+
+
+Project Password on itch.io: CuteBread27
