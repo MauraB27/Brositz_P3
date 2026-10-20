@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://b6mmqbf8o03vp"]
 
 [ext_resource type="Script" uid="uid://dqkwpcujkyelo" path="res://character_body_2d.gd" id="1_fj7yv"]
-[ext_resource type="Texture2D" uid="uid://168053qi2u02" path="res://character sprites/bread.png" id="2_fj7yv"]
+[ext_resource type="Texture2D" uid="uid://onlasw0wv7w0" path="res://character sprites/PC _ Computer - Bread Adventure - Playable Characters - Bread (1).png" id="2_cbp6q"]
 [ext_resource type="Script" uid="uid://cy5hoawmkrwq3" path="res://trigger_zone.gd" id="3_aqk2v"]
 [ext_resource type="Texture2D" uid="uid://coswpfxmukv4m" path="res://character sprites/Screenshot 2026-10-10 205515.png" id="3_dwbse"]
 [ext_resource type="Script" uid="uid://dmqbr3gr8sjm0" path="res://spikes.gd" id="3_pkg7o"]
@@ -2732,9 +2732,11 @@ position = Vector2(-5, 17)
 zoom = Vector2(3, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=451895996]
-position = Vector2(-9.536743e-07, 37)
-scale = Vector2(0.42968753, 0.453125)
-texture = ExtResource("2_fj7yv")
+position = Vector2(-1, 37)
+scale = Vector2(1.263158, 1.0999999)
+texture = ExtResource("2_cbp6q")
+region_enabled = true
+region_rect = Rect2(15.688889, 525.68756, 19.844467, 20.969116)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1641285496]
 position = Vector2(-1, 37)
